@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Image Overlap</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="image-container">
+    <img src="https://via.placeholder.com/200" alt="Image 1" class="image random-pos">
+    <img src="https://via.placeholder.com/250" alt="Image 2" class="image random-pos">
+    <img src="https://via.placeholder.com/180" alt="Image 3" class="image random-pos">
+    <img src="https://via.placeholder.com/220" alt="Image 4" class="image random-pos">
+  </div>
+</body>
+</html>
+
+<style>
+    body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f9;
+}
+
+.image-container {
+  position: relative;
+  width: 600px;
+  height: 400px;
+}
+
+.image {
+  position: absolute;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.random-pos:nth-child(1) {
+  top: 20px;
+  left: 50px;
+  transform: rotate(-10deg);
+}
+
+.random-pos:nth-child(2) {
+  top: 100px;
+  left: 150px;
+  transform: rotate(15deg);
+}
+
+.random-pos:nth-child(3) {
+  top: 180px;
+  left: 70px;
+  transform: rotate(-5deg);
+}
+
+.random-pos:nth-child(4) {
+  top: 50px;
+  left: 250px;
+  transform: rotate(10deg);
+}
+
+</style>
