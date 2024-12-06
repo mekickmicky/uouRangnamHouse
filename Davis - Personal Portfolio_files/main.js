@@ -91,7 +91,8 @@
     $('.st-nav').append('<span class="st-munu-toggle"><span></span></span>');
     $('.menu-item-has-children').append('<span class="st-munu-dropdown-toggle"></span>');
     $('.st-munu-toggle').on('click', function () {
-      $(this).toggleClass("st-toggle-active").siblings('.st-nav-list').slideToggle();;
+      // $(this).toggleClass("st-toggle-active").siblings('.st-nav-list').slideToggle();
+      $(this).siblings('.st-nav-list').slideToggle();
     });
     $('.st-munu-dropdown-toggle').on('click', function () {
       $(this).toggleClass('active').siblings('ul').slideToggle();
@@ -117,6 +118,7 @@
     // Click To Go Top
     $('.st-smooth-move').on('click', function () {
       var thisAttr = $(this).attr('href');
+      $('.st-munu-toggle').toggleClass("st-toggle-active").siblings('.st-nav-list').slideToggle();
       if ($(thisAttr).length) {
         var scrollPoint = $(thisAttr).offset().top - 10;
         $('body,html').animate({
@@ -273,7 +275,7 @@
 
   /*--------------------------------------------------------------
     10. Slick Slider
-  --------------------------------------------------------------*/ 
+  --------------------------------------------------------------*/
   function slickInit() {
     $('.st-slider').each(function () {
       // Slick Variable
@@ -358,7 +360,7 @@
   }
   /*--------------------------------------------------------------
     11. particles
-  --------------------------------------------------------------*/ 
+  --------------------------------------------------------------*/
   function particles() {
     if ($.exists('#particles-js')) {
       particlesJS("particles-js", {
@@ -492,7 +494,7 @@
     13. Parallax Effect
   --------------------------------------------------------------*/
   function parallaxEffect() {
-    $('.st-parallax').each(function() {
+    $('.st-parallax').each(function () {
       var windowScroll = $(document).scrollTop(),
         windowHeight = $(window).height(),
         barOffset = $(this).offset().top,

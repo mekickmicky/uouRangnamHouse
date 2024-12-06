@@ -1,0 +1,12 @@
+.st-munu-toggle span, .st-munu-toggle span:before, .st-munu-toggle span:after{
+    background-color: #fff;
+}
+.my-calendar{
+}
+.my-calendar img{
+    max-width: 700px !important;
+}
+:root {
+    --swiper-navigation-color: #fec544;
+    --swiper-pagination-color: #fec544;
+  }

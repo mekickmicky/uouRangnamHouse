@@ -43,6 +43,7 @@
   <link rel="stylesheet" href="./css/environment.css">
 
   <link rel="stylesheet" href="./css/book.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body id="home" class="">
@@ -63,6 +64,9 @@
                 </li>
                 <li>
                   <a href="#about" class="st-smooth-move">About</a>
+                </li>
+                <li>
+                  <a href="#calendar" class="st-smooth-move">CALENDAR</a>
                 </li>
                 <li>
                   <a href="#house" class="st-smooth-move">House</a>
@@ -103,6 +107,7 @@
 
   <!-- Start Hero Seciton -->
   <div class="st-height-b80 st-height-lg-b80"></div>
+
   <section class="st-hero-wrap st-parallax" style="background-position: center -130.6px">
     <div class="st-hero st-style1 st-ripple-version jquery-ripples">
       <div class="container">
@@ -179,7 +184,33 @@
   </section>
   <!-- End About Seciton -->
 
+  <section id="calendar">
+    <div class="st-height-b100 st-height-lg-b80"></div>
+    <div class="container">
+      <div class="st-section-heading st-style1">
+        <h4 class="st-section-heading-title">CALENDAR</h4>
+        <h2 class="st-section-heading-subtitle">CALENDAR</h2>
+      </div>
+      <div class="st-height-b25 st-height-lg-b25"></div>
+    </div>
 
+    <div class="container">
+      <swiper-container class="my-calendar" space-between="30" loop="true" navigation="true">
+        <swiper-slide class="text-center"><img src="./Images/Calendar/1.png" alt=""></swiper-slide>
+        <swiper-slide class="text-center"><img src="./Images/Calendar/2.png" alt=""></swiper-slide>
+        <swiper-slide class="text-center"><img src="./Images/Calendar/3.png" alt=""></swiper-slide>
+        <swiper-slide class="text-center"><img src="./Images/Calendar/4.png" alt=""></swiper-slide>
+        <swiper-slide class="text-center"><img src="./Images/Calendar/5.png" alt=""></swiper-slide>
+        <swiper-slide class="text-center"><img src="./Images/Calendar/6.png" alt=""></swiper-slide>
+        <swiper-slide class="text-center"><img src="./Images/Calendar/7.png" alt=""></swiper-slide>
+        <swiper-slide class="text-center"><img src="./Images/Calendar/8.png" alt=""></swiper-slide>
+        <swiper-slide class="text-center"><img src="./Images/Calendar/9.png" alt=""></swiper-slide>
+        <swiper-slide class="text-center"><img src="./Images/Calendar/10.png" alt=""></swiper-slide>
+        <swiper-slide class="text-center"><img src="./Images/Calendar/11.png" alt=""></swiper-slide>
+        <swiper-slide class="text-center"><img src="./Images/Calendar/12.png" alt=""></swiper-slide>
+      </swiper-container>
+    </div>
+  </section>
 
   <section id="house" class="st-about-wrap">
     <div class="st-height-b100 st-height-lg-b80"></div>
@@ -741,24 +772,9 @@
       <div class="row">
         <div class="col-lg-6">
           <h3 class="st-contact-title">Booking Accommodations</h3>
-          <div id="st-alert" style="display: none"></div>
-          <form action="#" method="POST" class="st-contact-form" id="contact-form">
-            <div class="st-form-field">
-              <input type="text" id="name" name="name" placeholder="Your Name" required="" />
-            </div>
-            <div class="st-form-field">
-              <input type="text" id="email" name="email" placeholder="Your Email" required="" />
-            </div>
-            <div class="st-form-field">
-              <input type="text" id="subject" name="subject" placeholder="Your Subject" required="" />
-            </div>
-            <div class="st-form-field">
-              <textarea cols="30" rows="10" id="msg" name="msg" placeholder="Your Message" required=""></textarea>
-            </div>
-            <button class="st-btn st-style1 st-color1" type="submit" id="submit" name="submit">
-              Send message
-            </button>
-          </form>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36869.66394194703!2d100.51838480427762!3d13.751954711943451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29fb97ea7939f%3A0x9ef65624a7c0ed64!2suouRangnamHouse!5e0!3m2!1sth!2sth!4v1733516971817!5m2!1sth!2sth"style="border:0;width: 100%;height: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <a href="https://www.google.co.th/maps/place/uouRangnamHouse/@13.7589978,100.5393562,18z/data=!4m18!1m8!3m7!1s0x30e29eb7a1da75b1:0x42376ec9b5d5fa76!2z4LiW4LiZ4LiZIOC4o-C4suC4h-C4meC5ieC4syDguYDguILguJXguKPguLLguIrguYDguJfguKfguLUg4LiB4Lij4Li44LiH4LmA4LiX4Lie4Lih4Lir4Liy4LiZ4LiE4LijIDEwNDAw!3b1!8m2!3d13.760149!4d100.5393952!16s%2Fg%2F1hm4l6pcx!3m8!1s0x30e29fb97ea7939f:0x9ef65624a7c0ed64!5m2!4m1!1i2!8m2!3d13.7592789!4d100.5399726!16s%2Fg%2F11w7dq0_4z?hl=th&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D" style="position: absolute;width: 100%;height: 100%;left: 0;" target="_blank">
+          </a>
         </div>
         <div class="st-height-b0 st-height-lg-b30"></div>
 
@@ -901,9 +917,6 @@
   <!-- book -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
   <script src="./js/book.js"></script>
-
-
-
 </body>
 
 </html>
@@ -924,7 +937,6 @@
     z-index: 999;
   }
 
-/* asdasdasd */
   .video-iframe {
     width: 100%;
     height: 100%;
@@ -940,12 +952,12 @@
     padding: 0 20px;
   }
 
-  .swiper-button-next,
+  /* .swiper-button-next,
   .swiper-button-prev,
   .swiper-pagination {
     display: none !important;
     opacity: 0;
-  }
+  } */
 
   .swiper-slide {
     background-color: #070d1b;
