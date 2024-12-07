@@ -24,6 +24,10 @@
     overflow: visible;
 }
 
+.st-social-link .st-social-btn img {
+    border-radius: 100%;
+}
+
 @media only screen and (max-width: 900px) {
 
     .my-calendar img {
