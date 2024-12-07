@@ -69,6 +69,9 @@
   function preloaderSetup() {
     $(".st-perloader").fadeOut();
     $("st-perloader-in").delay(150).fadeOut("slow");
+    setTimeout(() => {
+      $("#btn-gallery-checked").click();
+    }, 2000);
   }
 
   /*--------------------------------------------------------------
