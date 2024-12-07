@@ -15,6 +15,15 @@
     --swiper-pagination-color: #fec544;
 }
 
+.button-group {
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.st-social-link .st-social-btn {
+    overflow: visible;
+}
+
 @media only screen and (max-width: 900px) {
 
     .my-calendar img {

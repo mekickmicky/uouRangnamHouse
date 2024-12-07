@@ -118,7 +118,7 @@
     // Click To Go Top
     $('.st-smooth-move').on('click', function () {
       var thisAttr = $(this).attr('href');
-      $('.st-munu-toggle').toggleClass("st-toggle-active").siblings('.st-nav-list').slideToggle();
+      $('.st-munu-toggle').siblings('.st-nav-list').slideToggle();
       if ($(thisAttr).length) {
         var scrollPoint = $(thisAttr).offset().top - 10;
         $('body,html').animate({
