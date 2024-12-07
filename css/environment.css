@@ -38,7 +38,7 @@
     font-weight: normal;
     opacity: .9;
     position: absolute;
-    bottom: calc(1.5m - 32px);
+    bottom: calc(1.5em - 32px);
     right: .7em;
     text-shadow: 2px 2px #444;
   }
